@@ -4,31 +4,32 @@
     {
         static void Main(string[] args)
         {
-            string inputstring;
-            int i, vowels, consonants;
+            int num1, num2, num3;
+            
+         
 
-            inputstring = "hello world";
-            vowels = 0;
-            consonants = 0;
-            for (i = 0; i < inputstring.Length; i++)
+            Console.Write(" 1st number :");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" 2nd number :");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" 3rd  number :");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 > num2)
             {
-                if (inputstring[i] == 'a' || inputstring[i] == 'e' || inputstring[i] == 'i' || inputstring[i] == 'o' || inputstring[i] == 'u' || inputstring[i] == 'A' ||
-                    inputstring[i] == 'E' || inputstring[i] == 'I' || inputstring[i] == 'O' || inputstring[i] == 'U')
+                if (num1 > num3)
                 {
-                    vowels++;
+                    Console.Write("The 1st Number is the greater ");
                 }
-                else if ((inputstring[i] >= 'a' && inputstring[i] <= 'z') ||
-                         (inputstring[i] >= 'A' && inputstring[i] <= 'Z'))
+                else
                 {
-                    consonants++;
+                    Console.Write("The 3rd Number is the greater");
                 }
             }
-
-            Console.WriteLine("Number of vowel = " + vowels);
-            Console.WriteLine("Number of consonant = " + consonants);
-        
-
-
+            else if (num2 > num3)
+                Console.Write("The 2nd Number is the greater");
+            else
+                Console.Write("The 3rd Number is the greater");
 
         }
     }
