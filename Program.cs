@@ -4,14 +4,19 @@
     {
         static void Main(string[] args)
         {
-            int a = 5, b = 10;
-            Console.WriteLine("Before swap a= "+a+" b= "+b);
-            a=a*b; //a=50 (5*10)      
-            b=a/b; //b=5 (50/10)      
-            a=a/b; //a=10 (50/5)    
-            Console.Write("After swap a= "+a+" b= "+b);
+            Console.WriteLine("Enter a number for even or odd");
+            int num = Convert.ToInt32(Console.ReadLine());
 
+            int result = num%2;
 
+            if(result == 0)
+            {
+                Console.WriteLine("number is even ");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
         }
     }
 }
