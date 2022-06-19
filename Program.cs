@@ -4,21 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the dividend");
-            int dividend = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the divisor");
-            int divisor = int.Parse(Console.ReadLine());
-
-
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
-
-            Console.WriteLine("Quotient is: " + quotient);
-            Console.WriteLine("Remainder is: " + remainder);
-
-
-
+            int a = 5, b = 10;
+            Console.WriteLine("Before swap a= "+a+" b= "+b);
+            a=a*b; //a=50 (5*10)      
+            b=a/b; //b=5 (50/10)      
+            a=a/b; //a=10 (50/5)    
+            Console.Write("After swap a= "+a+" b= "+b);
 
 
         }
