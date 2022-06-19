@@ -4,13 +4,17 @@
     {
         static void Main(string[] args)
         {
-            int N = 0;
-            while(N <= 10)
+            int i, num;
+            Console.WriteLine("Number of input: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            
+            for (i = 1; i <= num; i++)
             {
-                var Power = Math.Pow(2, N);
-                N++;
-                Console.WriteLine(Power);
+                Console.WriteLine("1/{0} + ",i);
+                //s+=1/(float)i;
+                Console.WriteLine("\nThe nth  Harmonic Number : 1/{0} ", num);
             }
+            
         }
     }
 }
