@@ -4,12 +4,30 @@
     {
         static void Main(string[] args)
         {
-            int a = 5, b = 10;
-            Console.WriteLine("Before swap a= "+a+" b= "+b);
-            a=a*b; //a=50 (5*10)      
-            b=a/b; //b=5 (50/10)      
-            a=a/b; //a=10 (50/5)    
-            Console.Write("After swap a= "+a+" b= "+b);
+            string inputstring;
+            int i, vowels, consonants;
+
+            inputstring = "hello world";
+            vowels = 0;
+            consonants = 0;
+            for (i = 0; i < inputstring.Length; i++)
+            {
+                if (inputstring[i] == 'a' || inputstring[i] == 'e' || inputstring[i] == 'i' || inputstring[i] == 'o' || inputstring[i] == 'u' || inputstring[i] == 'A' ||
+                    inputstring[i] == 'E' || inputstring[i] == 'I' || inputstring[i] == 'O' || inputstring[i] == 'U')
+                {
+                    vowels++;
+                }
+                else if ((inputstring[i] >= 'a' && inputstring[i] <= 'z') ||
+                         (inputstring[i] >= 'A' && inputstring[i] <= 'Z'))
+                {
+                    consonants++;
+                }
+            }
+
+            Console.WriteLine("Number of vowel = " + vowels);
+            Console.WriteLine("Number of consonant = " + consonants);
+        
+
 
 
         }
