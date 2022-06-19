@@ -4,16 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number for leap year: ");
-            int year = Convert.ToInt32(Console.ReadLine());
-
-            if (year%4==0)
+            int N = 0;
+            while(N <= 10)
             {
-                Console.WriteLine("Is leap year");
-            }
-            else
-            {
-                Console.WriteLine("Is not leap year");
+                var Power = Math.Pow(2, N);
+                N++;
+                Console.WriteLine(Power);
             }
         }
     }
